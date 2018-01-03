@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require 'ryp'
+client = Ryp::Command.new
+command = ARGV[0]
+
+if client.respond_to?(command)
+  Ryp::Command.start
+else
+  client.info(command)
+end

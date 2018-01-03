@@ -1,0 +1,3 @@
+module Ryp
+  VERSION = "0.1.0"
+end
