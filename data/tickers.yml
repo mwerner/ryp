@@ -1,0 +1,13 @@
+- :name: Bitcoin
+  :ticker: BTC
+  :aliases:
+    - BTC
+    - XBT
+- :name: Bitcoin Cash
+  :ticker: BCH
+  :aliases:
+    - BCC
+- :name: Ethereum
+  :ticker: ETH
+- :name: Litecoin
+  :ticker: LTC

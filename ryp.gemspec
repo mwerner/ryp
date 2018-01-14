@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["m@mjw.io"]
 
   spec.summary       = %q{Cryptocurrency Tooling CLI}
-  spec.description   = %q{Tools you can use on the command line to investigate a cryptocurrency}
+  spec.description   = %q{Tools you can use on the command line to investigate cryptocurrency}
   spec.homepage      = "https://github.com/mwerner/ryp"
   spec.license       = "MIT"
 
@@ -21,7 +21,15 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "thor"
+  spec.add_dependency "faye-websocket"
+  spec.add_dependency "faraday"
+
   spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec_junit_formatter"
+  spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "mocha"
+  spec.add_development_dependency "dotenv"
 end
